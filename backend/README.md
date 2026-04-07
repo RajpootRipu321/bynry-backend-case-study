@@ -1,10 +1,24 @@
+# 🚀 Backend Case Study - Utility Billing System
 
-# Backend Implementation
+## 👨‍💻 Candidate
+Ripudaman Singh  
+📧 royalripu123@gmail.com  
 
-This folder contains a basic backend structure demonstrating:
+---
 
-- Controller Layer  
-- Service Layer  
-- Model Layer  
+## 📌 Problem Statement
+Design a scalable backend system for utility billing that ensures accurate billing, handles high concurrency, and provides reliable performance.
 
-It represents how a scalable backend system is structured.
+---
+
+## 💡 Key Highlights
+
+- Designed a **scalable backend system**
+- Implemented **layered architecture (Controller-Service-Model)**
+- Handled **concurrency using structured backend logic**
+- Ensured **data consistency**
+- Optimized design for **scalability**
+
+---
+
+## 🏗️ Architecture
