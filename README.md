@@ -33,3 +33,82 @@ The system is divided into modular services:
 ---
 
 ## ⚙️ Architecture
+User → API Layer → Service Layer → Database
+↓
+Cache (Redis)
+↓
+Queue (Kafka)
+
+
+---
+
+## 🧠 Key Backend Concepts
+
+- REST API Design  
+- ACID Transactions  
+- Caching (Redis)  
+- Asynchronous Processing  
+- Scalability & Concurrency Handling  
+
+---
+
+## 🗄️ Database Design
+
+### Users
+- UserId (PK)
+- Name
+- Address
+- MeterId
+
+### MeterReadings
+- ReadingId (PK)
+- MeterId
+- Timestamp
+- UnitsConsumed
+
+### Bills
+- BillId (PK)
+- UserId
+- Units
+- Amount
+- DueDate
+- Status
+
+---
+
+## 🔌 API Endpoints
+
+### Generate Bill
+`POST /api/billing/generate`
+
+### Get User Bills
+`GET /api/billing/{userId}`
+
+### Submit Meter Reading
+`POST /api/meter/reading`
+
+---
+
+## 🚀 Features
+
+- Scalable backend design  
+- High concurrency handling  
+- Optimized performance using caching  
+- Modular architecture  
+- Fault-tolerant system  
+
+---
+
+## 📂 Case Study Document
+
+👉 [View Case Study](./Ripu_caseStudy.pdf)
+
+---
+
+## 🔮 Future Improvements
+
+- Load balancing  
+- Rate limiting  
+- Cloud deployment (Azure/AWS)  
+- Monitoring (Prometheus, Grafana)  
+
